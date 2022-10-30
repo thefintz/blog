@@ -13,28 +13,18 @@ const themes = [
   {
     name: 'default',
     icon: classicThemeIcon,
-    label: 'Classic',
+    // label: 'Classic',
   },
   {
     name: 'dark',
     icon: darkThemeIcon,
-    label: 'Dark',
+    // label: 'Dark',
   },
-  {
-    name: 'earth',
-    icon: earthThemeIcon,
-    label: 'Earth',
-  },
-  {
-    name: 'ocean',
-    icon: blueThemeIcon,
-    label: 'Ocean',
-  },
-  {
-    name: 'sand',
-    icon: orangeThemeIcon,
-    label: 'Sand',
-  }
+  // {
+  //   name: 'earth',
+  //   icon: earthThemeIcon,
+  //   // label: 'Earth',
+  // },
 ]
 
 @customElement('theme-switcher')
@@ -51,19 +41,20 @@ export class ThemeSwitcher extends LitElement {
 				background-color: transparent;
 				border: 2px solid transparent;
 				border-radius: 20rem;
-				padding: 1px;
+				margin-left: 3px;
+				margin-right: 3px;
 				cursor: pointer;
 				transition: border var(--theme-transition);
 			}
 			button[active] {
-				border: 2px solid var(--theme-primary);
-        box-shadow: 0 0 12px 1px var(--theme-primary);
+				border: 1px solid var(--theme-primary);
+        box-shadow: 0 0 2px 0px var(--theme-primary);
 			}
 			button:hover {
 				border: 2px solid var(--theme-primary);
 			}
 			.theme-switcher__container {
-				margin: 2rem 0;
+				margin-top: 1rem;
 				display: grid;
 				grid-template-columns: repeat(5, 1fr);
 			}
