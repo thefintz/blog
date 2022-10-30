@@ -1,6 +1,9 @@
 ---
 import { Icon } from 'astro-icon';
 import { Container, Button } from '@littlesticks/odyssey-theme-components';
+import {ThemeSwitcher} from '../../theme-switcher/theme-switcher';
+import settings from '../../../config/settings';
+
 ---
 
 <Container>
@@ -10,6 +13,7 @@ import { Container, Button } from '@littlesticks/odyssey-theme-components';
 				<p>
 					Aqui você encontra novidades da API Fintz e insights interessantes do mercado financeiro.
 				</p>
+				{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 				<div class="hero-btns__container">
 					<!-- <Button href="https://www.fintz.com.br" customIcon>
 						Get Started
