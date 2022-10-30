@@ -4,15 +4,11 @@ export const nav = [
 		slug: '/',
 	},
 	{
-		title: 'Blog',
-		slug: '/blog',
+		title: 'Docs API',
+		slug: 'www.google.com',
 	},
 	{
-		title: 'About',
-		slug: '/company/about',
-	},
-	{
-		title: 'Contact',
-		slug: '/company/contact',
+		title: 'Site Fintz',
+		slug: 'www.fintz.com.br',
 	},
 ];
