@@ -111,6 +111,16 @@ export class ThemeSwitcher extends LitElement {
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
+
+    const _fintzLogo = document.querySelector('#fintz-logo') as HTMLImageElement;
+		if (theme === 'default') {
+			_fintzLogo.src = '../../public/logo-positivo.png';
+		}
+		if (theme === 'dark') {
+			_fintzLogo.src = '../../public/logo-negativo.png';
+		}
+		localStorage.setItem('theme', theme);
+		this.theme = theme;
 	}
 
 	render() {
