@@ -5,6 +5,7 @@ import type { Props as BaseHeadProps } from '../components/head/BaseHead.astro';
 import Logo from '../components/Logo.astro';
 import settings from '../config/settings';
 import { footerLists, footerSocials } from '../config/footer';
+import {ThemeSwitcher} from '../components/theme-switcher/theme-switcher';
 
 
 export interface Props {
@@ -19,9 +20,10 @@ const { seo } = Astro.props as Props;
 <Layout seo={seo}>
 	<Header rightMenu navData={nav} slot="header">
 		<span slot="logo">
-			<Logo />
+			{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
 		</span>
-		<Button slot="action-item" href="/theme/get-started">Get Started</Button>
+		<Button slot="action-item" href="www.fintz.com.br">Get Started</Button>
+		<a href="www.fintz.com.br">Get aaa</a>
 	</Header>
 	<div id="page">
 		<slot />
