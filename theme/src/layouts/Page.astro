@@ -20,7 +20,8 @@ const { seo } = Astro.props as Props;
 <Layout seo={seo}>
 	<Header rightMenu navData={nav} slot="header">
 		<span slot="logo">
-			{settings.enableThemeSwitcher && <ThemeSwitcher client:load/>}
+			<!-- {settings.enableThemeSwitcher && <ThemeSwitcher client:load/>} -->
+			<Logo/>
 		</span>
 		<Button slot="action-item" href="https://www.fintz.com.br">Voltar ao Site Fintz</Button>
 	</Header>
