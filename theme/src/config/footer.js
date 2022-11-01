@@ -27,40 +27,40 @@ export const footerSocials = [
 ]
 
 export const footerLists = [
-	{
-		title: 'Landing Pages',
-		items: [
-			{
-				title: 'Landing Page 1',
-				slug: '/landing-pages/landing-1',
-			},
-			{
-				title: 'Landing Page 2',
-				slug: '/landing-pages/landing-2',
-			},
-      // {
-			// 	title: 'Landing Page 3',
-			// 	slug: '/landing-pages/landing-3',
-			// },
-		],
-	},
-	{
-		title: 'Company',
-		items: [
-			{
-				title: 'About',
-				slug: '/company/about',
-			},
-			{
-				title: 'Blog',
-				slug: '/blog',
-			},
-			{
-				title: 'Contact',
-				slug: '/company/contact',
-			},
-		],
-	},
+	// {
+	// 	title: 'Landing Pages',
+	// 	items: [
+	// 		{
+	// 			title: 'Landing Page 1',
+	// 			slug: '/landing-pages/landing-1',
+	// 		},
+	// 		{
+	// 			title: 'Landing Page 2',
+	// 			slug: '/landing-pages/landing-2',
+	// 		},
+  //     {
+	// 			title: 'Landing Page 3',
+	// 			slug: '/landing-pages/landing-3',
+	// 		},
+	// 	],
+	// },
+	// {
+	// 	title: 'Company',
+	// 	items: [
+	// 		{
+	// 			title: 'About',
+	// 			slug: '/company/about',
+	// 		},
+	// 		{
+	// 			title: 'Blog',
+	// 			slug: '/blog',
+	// 		},
+	// 		{
+	// 			title: 'Contact',
+	// 			slug: '/company/contact',
+	// 		},
+	// 	],
+	// },
 	// {
 	// 	title: 'Theme',
 	// 	items: [
@@ -77,7 +77,7 @@ export const footerLists = [
   //       slug: '/theme/theme-setup',
   //     },
   //     {
-  //       title: 'Customizing Odyssey',
+  //       title: 'Customizing This Blog',
   //       slug: '/theme/customizing-odyssey',
   //     }
 	// 	],
