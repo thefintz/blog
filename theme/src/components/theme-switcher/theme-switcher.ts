@@ -95,29 +95,29 @@ export class ThemeSwitcher extends LitElement {
 
     const _heroImage = document.querySelector('#home-hero-image') as HTMLImageElement;
 		if (theme === 'default') {
-			_heroImage.src = '/assets/images/home/classic-hero.jpg';
+			_heroImage.src = '/assets/images/home/fintz_pc_sources.png';
 		}
 		if (theme === 'dark') {
-			_heroImage.src = '/assets/images/home/dark-hero.jpg';
+			_heroImage.src = '/assets/images/home/fintz_pc_sources.png';
 		}
 		if (theme === 'earth') {
-			_heroImage.src = '/assets/images/home/earth-hero.jpg';
+			_heroImage.src = '/assets/images/home/fintz_pc_sources.png';
 		}
 		if (theme === 'ocean') {
-			_heroImage.src = '/assets/images/home/ocean-hero.jpg';
+			_heroImage.src = '/assets/images/home/fintz_pc_sources.png';
 		}
 		if (theme === 'sand') {
-			_heroImage.src = '/assets/images/home/sand-hero.jpg';
+			_heroImage.src = '/assets/images/home/fintz_pc_sources.png';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
 
     const _fintzLogo = document.querySelector('#fintz-logo') as HTMLImageElement;
 		if (theme === 'default') {
-			_fintzLogo.src = '../../public/logo-positivo.png';
+			_fintzLogo.src = 'logo-positivo.png';
 		}
 		if (theme === 'dark') {
-			_fintzLogo.src = '../../public/logo-negativo.png';
+			_fintzLogo.src = 'logo-negativo.png';
 		}
 		localStorage.setItem('theme', theme);
 		this.theme = theme;
