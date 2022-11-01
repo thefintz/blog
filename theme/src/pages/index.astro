@@ -15,7 +15,7 @@ const posts = await Astro.glob('./blog/posts/*.mdx').then(posts =>
 			title: frontmatter.title,
 			description: frontmatter.description,
 			authors: frontmatter.authors,
-			publishDate: parse(frontmatter.publishDate, 'MMMM d, yyyy', new Date()),
+			publishDate: parse(frontmatter.publishDate, 'dd/mm/yyyy', new Date()),
 			featuredImage: frontmatter.featuredImage,
 			excerpt: frontmatter.excerpt,
 			href: url,
@@ -28,8 +28,8 @@ const posts = await Astro.glob('./blog/posts/*.mdx').then(posts =>
 );
 
 const seo = {
-	title: 'Blog | Astro Odyssey Theme',
-	description: 'Astro Odyssey Theme Blog Page',
+	title: 'Blog | Fintz',
+	description: 'Fintz API blog',
 };
 ---
 
