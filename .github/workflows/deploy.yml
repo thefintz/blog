@@ -9,7 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v3
-        working-directory: theme
         with:
           cache: npm
           node-version: current
@@ -20,10 +19,9 @@ jobs:
         working-directory: theme
 
       - uses: JamesIves/github-pages-deploy-action@4.0.0
-        working-directory: theme
         if: github.ref == 'refs/heads/master'
         with:
           branch: gh-pages
-          folder: ./dist
+          folder: ./theme/dist
           single-commit: true
           silent: false
